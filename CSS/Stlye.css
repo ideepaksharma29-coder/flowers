@@ -2,17 +2,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Serif;
 }
-body
-{
-    background: url(/Images/about-bg-vector.png);
-    object-fit: fill;
+body{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+#main-container{
+    
+    background: url(/Images/about-bg-vector.png);
+    object-fit: fill;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+
+
+}
 nav{
     height: 80px;
     width: 100%;
@@ -21,8 +31,7 @@ nav{
     justify-content: space-between;
 }
 nav .logo{
-    width: 10%;
-    
+    width: 10%;  
 }
 nav ul{
     width: 40%;
@@ -30,32 +39,38 @@ nav ul{
     justify-content: center;
     align-items: center;
     gap: 40px;
-    margin-right: 300px;
+    margin-left:-30%;
 }
 nav ul li {
     list-style: none;
 }
 nav ul li a {
-font-size: 15px;
+font-size: 20px;
 text-transform: capitalize;
 color: black;
 font-weight: 400;
+text-decoration: none;
 }
+nav ul li a:hover {
+    color: rgb(225, 76, 101);
+    text-decoration: underline;
+}
+
 nav .right-side-bar{
-    width: 20%;
+    width: 15%;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
 }
 nav .right-side-bar i{
-    font-size: 20px;
+    font-size: 30px;
 }
 nav .right-side-bar button{
     font-size: 18px;
     padding: 5px;
     border-radius: 5px;
-    border: 2px solid rgb(230, 123, 141);
+    border: 2px solid rgb(225, 76, 101);
     border-style: dashed;
    
 }
@@ -71,74 +86,68 @@ nav .right-side-bar button i{
 #hero .left-bar{
     width: 50%;
     height: auto;
-    padding: 0px 0px 0px 100px;
 }
-#hero .left-bar .img1{
-    margin-left: 450px;
+#hero .left-bar img:nth-child(1){
+    margin-left: 500px;
     height: 150px;
     width: 150px;
-}
-#hero .left-bar .img1 img{
-    width: 150px;
-    height: 150px;
 }
 #hero .left-bar p{
-    width: 80%;
-    font-size: 50px;
+    margin-top: 20px;
+    width: 90%;
+    font-size: 55px;
     font-weight: bolder;
 }
 #hero .left-bar p span{
-    color: pink;
-    font-size: 30px;
-    font-weight: bold;
-    font-family: italic;
+    color: rgb(244, 126, 145);
+    font-size: 50px;
+    font-weight: bolder;
+     font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
-
-
 #hero .left-bar button:nth-child(3){
+     border: 2px solid crimson;
+    border-style: dashed;
     margin-top: 40px;
     margin-left: 20px;
     background-color:pink;
-    border: 2px solid crimson;
-    border-style: dashed;
     border-radius: 8px;
     font-size: 20px;
-    padding: 5px;
-    border: 5px;
+    padding: 5px 10px;
     
 }
 #hero .left-bar button:nth-child(4){
     margin-top: 40px;
-    margin-left: 20px;
-    background-color: rgb(173, 172, 172);
+    margin-left: 40px;
+    background-color: rgb(204, 200, 200);
     border-style: dashed;
     border-radius: 8px;
     font-size: 20px;
-    padding: 5px;
-    border: 5px;
+    padding: 5px 10px;
 }
-#hero .left-bar img2{
-    height: 150px;
-    width: 150px;
+#hero .left-bar img:nth-child(6){
+    margin-top: 50px;
+
 }
 #hero .right-bar{
     width: 50%;
 }
-
 #hero .right-bar .img3{
-    margin-top: 100px;
+    margin-top: 50px;
     margin-left: 150px;
-    height: 500px;
-    width: 500px;
+    height: 600px;
+    width: 600px;
     border-radius: 30px;
-    background-color: blueviolet;
+    background-color: purple;
 }
 #hero .right-bar .img3 img{
-    height: 400px;
+    height: 500px;
     margin-top: 100px;
     margin-left: -100px;
 }
 #banner{
+    margin-top: 100px;
     width: 100%;
     height: 200px;
     display: flex;
@@ -147,8 +156,8 @@ nav .right-side-bar button i{
     gap: 20px;
 }
 #banner .inner-box{
-    height: 150px;
-    width: 300px;
+    height: 200px;
+    width: 400px;
     display: flex;
     background-color: pink;
     border-radius: 20px;
@@ -159,44 +168,59 @@ nav .right-side-bar button i{
     flex-direction: column;
     justify-content: center;
     gap: 30px;
-    padding: 0px 0 0 30px ;
 }
+#banner .inner-box .info p{
+    margin-left: 20px;
+    font-size: 20px;
+}
+#banner .inner-box .info a{
+    margin-left: 20px;
+    font-size: 18px;
+}
+
 #banner .inner-box .banner{
-    width: 40%;
+    width: 55%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
 }
 #banner .inner-box .banner img{
-    width: 200px;
-
+   width: 250px;
 }
 #page2{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10%;margin-top: 50px;
+    margin-top: 100px;
 }
 #page2 .info{
     height: 400px;
-    width: 30%;
+    width: 50%;
 }
 #page2 .info h4{
-    font-size: 35px;
+    width: 95%;
+    font-size: 60px;
     font-weight: bolder;
+    word-spacing: 10px;
 }
 #page2 .info h4 span{
-    color: pink;
-    font-size: 28px;
-    font-weight: bolder;
+    color: rgb(244, 126, 145);
+     font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+    font-size: 55px;
 }
 #page2 .info p{
-    font-size: 12px;
+    font-size: 15px;
     margin-top: 10px;
     color: gray;
 }
 #page2 .info button{
-    padding: 5px;
+    padding: 8px 10px;
     margin-top: 30px;
     font-size: 15px;
-    border: 2px solid pink;
+    border: 2px solid rgb(225, 76, 101);
     border-style: dashed;
     border-radius: 5px;
     background-color: rgb(250, 240, 241);
@@ -206,22 +230,22 @@ nav .right-side-bar button i{
     color: palevioletred;
 }
 #page2 .banner{
-    height: 400px;
-    width: 30%;
+    height: 500px;
+    width: 50%;
     text-align: center;
     position: relative;
 }
 #page2 .banner img{
- height: 400px;
+ height: 500px;
 }
 #page2 .banner img:nth-child(2){
     position: absolute;
-    height: 150px;
-    left: 0px;
+    height: 200px;
+    left: 120px;
     bottom: 0;
 }
 #page3{
-    width: 80%;
+    width: 100%;
     margin-top: 100px;
 }
 #page3 .flowers-head{
@@ -230,15 +254,15 @@ nav .right-side-bar button i{
     align-items: center;
 }
 #page3 .flowers-head h3{
-    font-size: 30px;
+    font-size: 40px;
 }
 #page3 .flowers-head h3 span{
-    color: pink;
+    color: rgb(244, 126, 145);
 }
 #page3 .flowers-head button{
-    font-size: 15px;
-    padding: 5px;
-    border: 2px solid pink;
+    font-size: 20px;
+    padding: 8px 10px;
+    border: 2px solid rgb(225, 76, 101);
     border-style: dashed;
     border-radius: 5px;
     background-color: rgb(250, 240, 241);
@@ -247,16 +271,17 @@ nav .right-side-bar button i{
     margin-left: 5px;
 }
 #page3 .outer-box{
+    margin-top: 20px;
     width: 100%;
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
 }
 #page3 .outer-box .inner-box{
-    width: 270px;
-    height: 350px;
+    width: 285px;
+    height: 450px;
     border-radius: 20px;
-    border: 2px solid pink;
+    border: 2px solid rgb(225, 76, 101);
     border-style: dashed ;
 }
 #page3 .outer-box .img{
@@ -273,15 +298,18 @@ nav .right-side-bar button i{
     border-radius: 20px;
 }
 #page3 .outer-box .info h3{
-    padding: 20px 0;
+    padding-top: 20px;
+    margin-left: 20px;
     font-weight: bold;
     font-size: 20px;
 }
 #page3 .outer-box .info p{
     color: gray;
-    font-size: 12px;
+    font-size: 13px;
+    margin: 20px 20px;
 }
 #page3 .outer-box .info span:nth-child(3){
+    margin-left: 20px;
     margin-top: 20px;
     text-decoration: line-through;
     color: gray;
@@ -296,10 +324,8 @@ nav .right-side-bar button i{
     width: 30%;
     
 }
-
 #page3 .outer-box .info .last{
-    margin-top: 5px;
-    padding: 10px;
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
     gap: 20px;
@@ -308,7 +334,10 @@ nav .right-side-bar button i{
     color: rgb(244, 143, 160);
     background-color: rgb(244, 237, 237);
 }
-
+.bi-cart3{
+padding: 5px ;
+font-size: 15px;
+}
 #page3 .outer-box .info .last .button{
     font-size: 15px;
     background-color: pink;
@@ -320,19 +349,390 @@ nav .right-side-bar button i{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
 
 }
 #page4 .inner-box{
     border-radius: 10px;
-    border: 2px solid gray;
+    border: 2px solid rgb(225, 76, 101);
     border-style: dashed;
-    width: 260px;
-    height: 80px;
+    width: 365px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#page4 .inner-box .icone {
+    width: 20%;
+    text-align: center;
+    color: rgb(225, 76, 101);
 }
 #page4 .inner-box .icone i{
-    
+    font-size: 30px;
+} 
+#page4 .inner-box .notice{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
 }
+#page5 {
+    margin-top: 100px;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    border: 20px solid rgb(244, 143, 160);
+    border-radius: 35px;
+}
+#page5 .info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+#page5 .info h6{
+    font-size: 40px;
+}
+#page5 .info h1{
+    font-size: 150px;
+    position: relative;
+}
+#page5 .info p{
+    font-size: 80px;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  bottom: -10;
+    color: palevioletred;
+    position: absolute;
+}
+#page5 .info h3{
+    font-size: 70px;
+}
+#page5 .info button{
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: 2px solid rgb(225, 76, 101);
+    border-style: dashed;
+}
+#page5 .right-img{
+    width: 50%;
+    position: relative;
+}
+#page5 img{
+    height: 550px;
+    position: absolute;
+    border-radius: 15px;
+    right: 0;
+    top: 0;
+}
+#page6{
+    margin-top: 100px;
+    width: 100%;
+    display: grid;
+    place-items: center;
+
+}
+#page6 h1{
+    font-size: 60px;
+}
+#page6 h1 span{
+    color: rgb(244, 126, 145);
+}
+
+#page6 .inner{
+    width: 80%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+#page6 .inner .banner1{
+    width: 50%;
+    border-radius: 20px;
+    border-style: dashed;
+    border: 2px solid rgb(225, 76, 101);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: dashed;
+    padding: 20px;
+}
+#page6 .inner .banner1 img{
+    height: 200px;
+    border-radius: 20px;
+}
+#page6 .inner .banner1 .info{
+    padding: 20px;
+}
+#page6 .inner .banner1 .info p:nth-child(1) i{
+    color: rgb(225, 76, 101);
+    margin-top: 10px;
+}
+#page6 .inner .banner1 .info p:nth-child(2){
+    padding: 15px 0px;
+    font-size: 25px;
+}
+#page6 .inner .banner1 .info p:nth-child(2) span{
+    color: rgb(225, 76, 101);
+}
+#page7{
+    width: 100%;
+    margin-top: 100px;
+}
+#page7 .articles-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#page7 .articles-head h1{
+    font-size: 40px;
+}
+#page7 .articles-head h1 span{
+    color: rgb(244, 126, 145);
+}
+#page7 .articles-head button{
+    font-size: 20px;
+    padding: 8px 10px;
+    border: 2px solid rgb(225, 76, 101);
+    border-style: dashed;
+    border-radius: 5px;
+    background-color: rgb(250, 240, 241);
+}
+#page7 .articles-head button i{
+    margin-left: 5px;
+}
+#page7 .banner-outer{
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+#page7 .banner-outer .banner-inner{
+    width: 33.33%;
+    border-radius: 20px;
+    border: 2px solid rgb(225, 76, 101);
+    border-style: dashed;
+}
+#page7 .banner-outer .banner-inner img{
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+}
+#page7 .banner-outer .banner-inner p:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+#page7 .banner-outer .banner-inner p:nth-child(2) img{
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+}
+#page7 .banner-outer .banner-inner p:nth-child(2) span:nth-child(1){
+     display: flex;
+    align-items: center;
+}
+#page7 .banner-outer .banner-inner p:nth-child(2) span:nth-child(2){
+    color: rgb(244, 126, 145);
+    font-size: 18px;
+    padding: 5px;
+    font-weight: bold;
+}
+#page7 .banner-outer .banner-inner p:nth-child(2) button{
+    border: 1px solid rgb(225, 76, 101);
+    border-style: dashed;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 18px;
+}
+#page7 .banner-outer .banner-inner h4 {
+    font-size: 23px;
+    width: 80%;
+    padding: 0px 20px;
+}
+#page7 .banner-outer .banner-inner p:nth-child(4) {
+    padding: 20px;
+    font-size: 15px;
+    color: gray;
+}
+#page7 .banner-outer .banner-inner button:nth-child(5){
+    border: 1px solid rgb(225, 76, 101);
+    background-color: rgb(234, 198, 224);
+    border-style: dashed;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 0px 20px 20px;
+    font-size: 15px;
+}
+#footer .subscribe-banner{
+    width: 70%;
+    height: 150px;
+    border: 2px solid rgb(225, 76, 101);
+    background-color: white;
+    border-radius: 20px;
+    border-style: dashed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    position: absolute;
+    top: -75px;
+    left: 15%;
+}
+#footer .subscribe-banner h1{
+    font-size: 40px;
+}
+#footer .subscribe-banner h1 p{
+    width: 80%;
+    font-size: 15px;
+    font-weight: normal;
+    color: gray;
+    margin-top: 10px;
+}
+#footer .subscribe-banner .from{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+#footer .subscribe-banner .from input{
+    width: 350px;
+    height: 50px;
+    font-size: 18px;
+    padding: 5px;
+    border: 2px solid rgb(225, 76, 101);
+     border-radius: 10px;
+    border-style: dashed;
+}
+#footer .subscribe-banner .from button{
+    width: 150px;
+    background-color: rgb(225, 76, 101);
+    color: white;
+    padding: 10px 15px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+#footer .subscribe-banner .from button i{
+    color: white;
+    font-size: 20px;
+}
+ .list-box{
+    
+
+    width: 100%;
+    height: 500px;
+    background-color: rgb(248, 194, 208);
+    padding: 80px 0px 0 100px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#footer{
+    background-color: rgb(248, 194, 208);
+    position: relative;
+    margin-top: 200px;
+     display: flex;
+     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+#footer .inner-box{
+    margin-top: 50px;
+    height: 280px;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#footer .one{
+    width: 25%;
+}
+#footer .one img{
+    height: 100px;
+    width: 185px;
+}
+#footer .one p{
+    width: 90%;
+    color: grey;
+    margin-top: 20px;
+}
+#footer .one h6{
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+    font-size: 15px;
+}
+#footer .one h6 span{
+    margin-top: -5px;
+}
+
+#footer .one h6 i{
+    font-size: 20px;
+}
+    
+#footer .last{
+    width: 18%;
+}
+
+#footer .inner-box ul{
+    list-style: none;
+}
+#footer .inner-box ul li{
+    margin-top: 20px;
+}
+#footer .inner-box ul li i{
+    color: black;
+    font-size: 25px;
+    margin-left: 10px;
+}
+.footer{
+    border-top: 2px solid rgb(225, 76, 101);
+    border-left: rgb(248, 194, 208);
+    border-right: rgb(248, 194, 208);
+    border-bottom: rgb(248, 194, 208);
+    background-color: rgb(248, 194, 208);
+    border-style: dashed;
+    height: 80px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer img{
+    height: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
