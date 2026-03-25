@@ -32,6 +32,7 @@ nav{
 }
 nav .logo{
     width: 10%;  
+    cursor: pointer;
 }
 nav ul{
     width: 40%;
@@ -65,6 +66,7 @@ nav .right-side-bar{
 }
 nav .right-side-bar i{
     font-size: 30px;
+    cursor: pointer;
 }
 nav .right-side-bar button{
     font-size: 18px;
@@ -72,6 +74,7 @@ nav .right-side-bar button{
     border-radius: 5px;
     border: 2px solid rgb(225, 76, 101);
     border-style: dashed;
+    cursor: pointer;
    
 }
 nav .right-side-bar button i{
@@ -115,6 +118,7 @@ nav .right-side-bar button i{
     border-radius: 8px;
     font-size: 20px;
     padding: 5px 10px;
+    cursor: pointer;
     
 }
 #hero .left-bar button:nth-child(4){
@@ -125,6 +129,7 @@ nav .right-side-bar button i{
     border-radius: 8px;
     font-size: 20px;
     padding: 5px 10px;
+    cursor: pointer;
 }
 #hero .left-bar img:nth-child(6){
     margin-top: 50px;
@@ -224,6 +229,7 @@ nav .right-side-bar button i{
     border-style: dashed;
     border-radius: 5px;
     background-color: rgb(250, 240, 241);
+    cursor: pointer;
 }
 #page2 .info button i{
     margin-left: 10px;
@@ -266,6 +272,7 @@ nav .right-side-bar button i{
     border-style: dashed;
     border-radius: 5px;
     background-color: rgb(250, 240, 241);
+    cursor: pointer;
 }
 #page3 .flowers-head button i{
     margin-left: 5px;
@@ -333,6 +340,7 @@ nav .right-side-bar button i{
 #page3 .outer-box .info .last span i{
     color: rgb(244, 143, 160);
     background-color: rgb(244, 237, 237);
+    cursor: pointer;
 }
 .bi-cart3{
 padding: 5px ;
@@ -343,6 +351,7 @@ font-size: 15px;
     background-color: pink;
     padding: 3px;
     border-radius: 5px;
+    cursor: pointer;
 }
 #page4{
     margin-top: 100px;
@@ -361,6 +370,7 @@ font-size: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 #page4 .inner-box .icone {
     width: 20%;
@@ -418,6 +428,7 @@ font-size: 15px;
     padding: 5px 10px;
     border: 2px solid rgb(225, 76, 101);
     border-style: dashed;
+    cursor: pointer;
 }
 #page5 .right-img{
     width: 50%;
@@ -503,6 +514,7 @@ font-size: 15px;
     border-style: dashed;
     border-radius: 5px;
     background-color: rgb(250, 240, 241);
+    cursor: pointer;
 }
 #page7 .articles-head button i{
     margin-left: 5px;
@@ -571,6 +583,7 @@ font-size: 15px;
     padding: 5px 10px;
     margin: 0px 20px 20px;
     font-size: 15px;
+    cursor: pointer;
 }
 #footer .subscribe-banner{
     width: 70%;
@@ -619,6 +632,7 @@ font-size: 15px;
     padding: 10px 15px;
     font-size: 20px;
     border-radius: 10px;
+    cursor: pointer;
 }
 #footer .subscribe-banner .from button i{
     color: white;
@@ -660,6 +674,7 @@ font-size: 15px;
 #footer .one img{
     height: 100px;
     width: 185px;
+    cursor: pointer;
 }
 #footer .one p{
     width: 90%;
@@ -686,9 +701,11 @@ font-size: 15px;
 
 #footer .inner-box ul{
     list-style: none;
+    
 }
 #footer .inner-box ul li{
     margin-top: 20px;
+    cursor: pointer;
 }
 #footer .inner-box ul li i{
     color: black;
@@ -710,6 +727,7 @@ font-size: 15px;
 }
 .footer img{
     height: 25px;
+    cursor: pointer;
 }
 
 
